@@ -317,9 +317,6 @@ section {
 
 .contact .row {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
   gap: 2rem;
 }
 
@@ -328,6 +325,7 @@ section {
   object-fit: cover;
   width: 100%;
 }
+
 .contact .row form {
   flex: 1 1 45rem;
   padding: 2.7rem 2rem;
@@ -423,13 +421,6 @@ footer .credit a {
   color: #fff;
   font-weight: 700;
 }
-/* Media Queries */
-/* Laptop */
-@media (max-width: 1366px) {
-  html {
-    font-size: 75%;
-  }
-}
 
 /* Tablet */
 @media (max-width: 768px) {
@@ -497,6 +488,18 @@ footer .credit a {
 
   .container-content-card .card {
     width: 40%;
+  }
+
+  .contact .row {
+    flex-wrap: wrap;
+  }
+
+  .contact .row .map {
+    height: 30rem;
+  }
+
+  .contact .row form {
+    padding-top: 0;
   }
 }
 
